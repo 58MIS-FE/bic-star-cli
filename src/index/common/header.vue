@@ -1,9 +1,12 @@
 <template>
   <header>
-    <el-col :span="18">
+    <el-col :span="3">
+      <div class="logo-text">LOGO</div>
+    </el-col>
+    <el-col :span="16">
       <div class="grid-content bg-purple"></div>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="5">
       <div class="h-right">
         <!-- 消息 -->
         <div class="notice-c" title="查看新消息">
@@ -146,5 +149,18 @@ export default {
 }
 .el-dropdown .selAds {
   position: relative;
+}
+.el-dropdown-link{
+  color: #fff;
+}
+.logo-text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
 }
 </style>

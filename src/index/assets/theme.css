@@ -44,6 +44,14 @@ a{
 .el-main{
   padding: 0;
 }
-.el-header{
-  background: red;
+.el-header , .el-menu-vertical-demo ,  .el-aside ,.el-footer ,  .el-main,.home-index,.el-menu { 
+}
+ 
+#app{
+  background-color: #2e323f
+}
+
+
+.el-menu-item.is-active ,.logo-text{
+  color: #ffd04b
 }

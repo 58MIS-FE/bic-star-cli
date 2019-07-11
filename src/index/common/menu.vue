@@ -2,13 +2,11 @@
   <div>
    
     <el-menu
-      default-active="2"
       class="el-menu-vertical-demo"
       :unique-opened="true"
       :router="true"
-      background-color="#304156"
+      background-color="#2e323f"
       text-color="#fff"
-      active-text-color="#ffd04b"
       :collapse="isCollapse"
       :collapse-transition="false"
       :default-active="nowPage"
@@ -20,78 +18,14 @@
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
-      <el-submenu index="/upload">
-        <template slot="title">
-          <i class="el-icon-share"></i>
-          <span>上传文件</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="/upload1">
-            <i class="el-icon-tickets"></i>
-            <span>点击上传</span>
-          </el-menu-item>
-          <el-menu-item index="/upload2">
-            <i class="el-icon-document"></i>
-            <span>用户上传</span>
-          </el-menu-item>
-          <el-menu-item index="/upload3">
-            <i class="el-icon-goods"></i>
-            <span slot="title">照片墙</span>
-          </el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="/table">
-        <template slot="title">
-          <i class="el-icon-news"></i>
-          <span>table表格</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="/table1">
-            <i class="el-icon-menu"></i>
-            <span slot="title">基础表格</span>
-          </el-menu-item>
-          <el-menu-item index="/table2">
-            <i class="el-icon-menu"></i>
-            <span slot="title">展开行表格</span>
-          </el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="/tabs">
-        <template slot="title">
-          <i class="el-icon-star-on"></i>
-          <span>tab切换</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="/tabs1">
-            <i class="el-icon-star-on"></i>
-            <span slot="title">基础tab</span>
-          </el-menu-item>
-          <el-menu-item index="/tabs2">
-            <i class="el-icon-star-on"></i>
-            <span slot="title">自定义增加tab</span>
-          </el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-      <el-submenu index="/form">
-        <template slot="title">
-          <i class="el-icon-date"></i>
-          <span>form表单</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="/form1">
-            <i class="el-icon-date"></i>
-            <span slot="title">基础form表单</span>
-          </el-menu-item>
-          <el-menu-item index="/form2">
-            <i class="el-icon-date"></i>
-            <span slot="title">自定义对齐方式表单</span>
-          </el-menu-item>
-          <el-menu-item index="/form3">
-            <i class="el-icon-date"></i>
-            <span slot="title">自带校验表单</span>
-          </el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
+      <el-menu-item index="/setting">
+        <i class="el-icon-s-tools"></i>
+        <span slot="title">系统设置</span>
+      </el-menu-item>
+      
+   
+      
+    
     </el-menu>
   </div>
 </template>
@@ -124,6 +58,9 @@ export default {
   color: #fff;
   text-align: center;
 }
+.tit > i{
+  cursor: pointer;
+}
 .leftSideOpen {
   height: 100%;
 }
@@ -138,5 +75,6 @@ export default {
 .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
-  }
+}
 </style>
+

@@ -56,4 +56,7 @@ export default {
   .home{
     padding: 20px;
   }
+  .home a{
+    color: #ffffff;
+  }
 </style>

@@ -12,11 +12,10 @@
           </el-aside>
            <!-- 渲染主要区域 -->
            <el-main>
-          
             <router-view/>
           </el-main>
         </el-container>
-          <el-footer>Footer</el-footer>
+          <el-footer><Footer/></el-footer>
       </el-container>
   </div>
 </template>
@@ -27,11 +26,14 @@ import { getMethods, postMethods } from "./server.js";
 import Menu from "../../common/menu.vue";
 // 引入顶部组件
 import Headers from "../../common/header.vue";
+// 引入底部组件
+import Footer from "../../common/footer.vue";
 
 export default {
   components: {
     Menu,
-    Headers
+    Headers,
+    Footer
   },
   data() {
     return {
@@ -85,14 +87,11 @@ export default {
 </script>
 <style scoped>
 .el-header, .el-footer{
-  background-color: #b3c0d1;
-  color: #333;
-  text-align: center;
+  color: #fff;
   line-height: 60px;
 }
 
 .home-index .el-aside {
-  background-color: rgb(48, 65, 86);
   min-width: 65px;
   text-align: left;
   height: 100%;
@@ -100,8 +99,7 @@ export default {
 }
 
 .el-main {
-  background-color: #fff;
-  color: #333;
+  color: #fff;
 }
 
 .el-container {
