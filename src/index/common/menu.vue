@@ -1,6 +1,4 @@
 <template>
-  <div>
-   
     <el-menu
       class="el-menu-vertical-demo"
       :unique-opened="true"
@@ -23,11 +21,7 @@
         <span slot="title">系统设置</span>
       </el-menu-item>
       
-   
-      
-    
     </el-menu>
-  </div>
 </template>
 
 <script>
@@ -40,9 +34,10 @@ export default {
     };
   },
   
-    
+    props:{navOpen:''},
     methods:{
       isOpenCloseF(){
+        if(!this.navOpen) return
         this.isCollapse = !this.isCollapse
       }
     }

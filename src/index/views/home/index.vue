@@ -8,7 +8,7 @@
         <el-container>
            <!-- 侧边栏部分 -->
           <el-aside width>
-            <Menu :navOpen="isCollapse" />
+            <Menu :navOpen="true"/>
           </el-aside>
            <!-- 渲染主要区域 -->
            <el-main>
@@ -81,7 +81,8 @@ export default {
           });
         }
       });
-    }
+    },
+    
   }
 };
 </script>

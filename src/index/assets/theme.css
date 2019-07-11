@@ -41,17 +41,18 @@ a{
 .fr{
   float:right;
 }
+body{
+  background-color: #2e323f;
+}
 .el-main{
   padding: 0;
 }
 .el-header , .el-menu-vertical-demo ,  .el-aside ,.el-footer ,  .el-main,.home-index,.el-menu { 
 }
- 
 #app{
-  background-color: #2e323f
+  background-color: #2e323f;
+ 
 }
-
-
 .el-menu-item.is-active ,.logo-text{
   color: #ffd04b
 }
