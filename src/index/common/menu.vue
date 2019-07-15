@@ -3,7 +3,6 @@
       class="el-menu-vertical-demo"
       :unique-opened="true"
       :router="true"
-      background-color="#2e323f"
       text-color="#fff"
       :collapse="isCollapse"
       :collapse-transition="false"
