@@ -49,10 +49,11 @@ body{
 }
 .el-header , .el-menu-vertical-demo ,  .el-aside ,.el-footer ,  .el-main,.home-index,.el-menu { 
 }
+/* style */
 #app{
   background-color: #2e323f;
- 
 }
 .el-menu-item.is-active ,.logo-text{
   color: #ffd04b
 }
+/* style */
