@@ -109,4 +109,8 @@ export default {
 .home-index {
   height: 100%;
 }
+.el-footer{
+  position: fixed;
+  bottom: 0;
+}
 </style>
