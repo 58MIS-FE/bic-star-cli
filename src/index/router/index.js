@@ -1,26 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomePage from '@/index/components/homepage/homePage.vue'
-import Setting from '@/index/components/setting/set.vue'
+import routes from './router'
 Vue.use(VueRouter);
-
-
-
-const routes = [{
-        path: '*',
-        redirect: '/homepage',
-        component: HomePage
-    },
-    {
-        path: '/home',
-        component: resolve => require(['../views/home/index.vue'],resolve),
-        children: [
-            { path: '/homepage', component: HomePage },
-            { path: '/setting', component: Setting }
-          ]
-    }
-];
-
 const router = new VueRouter({
     routes
 });
@@ -36,6 +17,5 @@ router.beforeEach((route, from, next) => {
 router.afterEach((to, from) => {
     //pv 统计
   
-
 });
 export default router;
