@@ -1,17 +1,12 @@
 
-const routes = [{
+export const routes = [{
     path: '*',
-    redirect: '/homepage',
-    component: () => import('@/index/components/homepage/homePage.vue')
+    target :'home',
+    redirect: '/home',
 },
 {
     path: '/home',
-    component: resolve => require(['../views/home/index.vue'],resolve),
-    children: [
-        { path: '/homepage', component: () => import('@/index/components/homepage/homePage.vue') },
-        { path: '/setting', component: () => import('@/index/components/setting/set.vue') }
-      ]
+    target :'home',
 }
 ];
 
-export default routes
