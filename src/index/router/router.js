@@ -1,8 +1,8 @@
 
 export const routeItem = [
 {
-    path: '/homepage',
-    target :'homepage',
+    path: '/homes',
+    target :'homes',
     name:'首页'
 },
 {

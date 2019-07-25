@@ -18,7 +18,7 @@ let children = routeItem
 
 const routes = [{
     path: '*',
-    redirect: '/homepage'
+    redirect: '/homes'
 },
 {
     path: '/home',
