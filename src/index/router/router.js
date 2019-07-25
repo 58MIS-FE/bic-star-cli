@@ -1,12 +1,13 @@
 
-export const routes = [{
-    path: '*',
-    target :'home',
-    redirect: '/home',
+export const routeItem = [
+{
+    path: '/homepage',
+    target :'homepage',
+    name:'首页'
 },
 {
-    path: '/home',
-    target :'home',
-}
-];
+    path: '/setting',
+    target :'setting',
+    name:'设置'
+}];
 

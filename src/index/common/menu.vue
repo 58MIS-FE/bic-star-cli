@@ -11,31 +11,33 @@
       <div class="tit">
         <i class="el-icon-rank" @click="isOpenCloseF"></i>
       </div>
-      <el-menu-item index="/homepage">
+      <el-menu-item :index="item.path" v-for="item in routes" :key="item.name">
         <i class="el-icon-menu"></i>
-        <span slot="title">首页</span>
+        <span slot="title">{{item.name}}</span>
       </el-menu-item>
-      <el-menu-item index="/setting">
-        <i class="el-icon-s-tools"></i>
-        <span slot="title">系统设置</span>
-      </el-menu-item>
+      
       
     </el-menu>
 </template>
 
 <script>
+import { routeItem } from '../router/router'
 export default {
      data() {
     return {
       isShowArrow: true, //判断用户名下拉栏上三角和下三角展示的变量
       isCollapse: false, //控制左侧导航栏展开或者收起的变量
-      nowPage:'/homepage' //进行菜单高亮设置的变量
+      nowPage:'/homepage', //进行菜单高亮设置的变量,
+      routes:''
     };
   },
-  
+    mounted(){
+      this.routes = routeItem
+    },
     props:{navOpen:''},
     methods:{
       isOpenCloseF(){
+        
         if(!this.navOpen) return
         this.isCollapse = !this.isCollapse
       }
