@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <h1>主页</h1>
-      <h4>欢迎大家使用</h4>
+      <h4>欢迎大家使用cli</h4>
       <h4></h4>
       <a href='https://element.eleme.io/#/zh-CN/component/installation' target='_blank'>组件库地址</a>
       <div>
