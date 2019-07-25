@@ -68,7 +68,7 @@ module.exports = {
     // 要引进外部资源库的页面(为空则全部引入)
     libraryEntry: [],
     // 本地开发端口
-    // port: 5858,
+    port: 5858,
     //是否参看源码  参看'#source-map' 不参看：false
     sourceMap: false,
     // 本地开发代理,默认转发本地的1111
