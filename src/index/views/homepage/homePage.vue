@@ -13,7 +13,6 @@
             :value="item.value">
           </el-option>
         </el-select>
-
         <el-date-picker
           v-model="value1"
           type="date"
