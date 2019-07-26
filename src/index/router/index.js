@@ -8,12 +8,7 @@ routeItem.forEach((item) => {
     item.component = resolve => require([`../views/${item.target}/${item.target}.vue`],resolve)
 })
 
-console.log(routeItem)
-// arr.forEach((item) =>{
-//     console.log(item)
-   
-//     console.log(`../views/${item.target}/${item.target}.vue`)
-// } )
+
 let children = routeItem
 
 const routes = [{
