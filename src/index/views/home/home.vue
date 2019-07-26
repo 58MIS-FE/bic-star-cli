@@ -95,7 +95,7 @@ export default {
 .home-index .el-aside {
   min-width: 65px;
   text-align: left;
-  height: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -104,13 +104,14 @@ export default {
 }
 
 .el-container {
+  overflow: hidden;
   height: 100%;
 }
 .home-index {
   height: 100%;
 }
 .el-footer{
-  position: fixed;
-  bottom: 0;
+  width: 100%;
 }
+
 </style>

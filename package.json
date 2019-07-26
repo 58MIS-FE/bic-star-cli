@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development node build/dev.js",
     "start": "npm run dev",
+    "stop": "",
     "build": "cross-env NODE_ENV=production node build/build.js",
     "build:d": "cross-env NODE_ENV=production-d node build/build.js",
     "build:c": "cross-env NODE_ENV=production-c node build/build.js",
