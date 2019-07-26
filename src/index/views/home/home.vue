@@ -63,7 +63,6 @@ export default {
      *  @param  {[type]} e   [事件源]
      *
      */
-
     isShowArrowMethods(e) {
       this.isShowArrow = !e;
     },
