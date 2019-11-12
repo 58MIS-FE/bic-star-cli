@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { routeItem } from '../router/router'
+import  routeItem  from '../router/router'
 export default {
      data() {
     return {

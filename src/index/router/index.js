@@ -1,15 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import { routeItem } from './router'
+import routeItem from './router.json'
 Vue.use(VueRouter);
-
+console.log(routeItem,'routeItem')
 
 routeItem.forEach((item) => {
     item.component = resolve => require([`../views/${item.target}/${item.target}.vue`],resolve)
 })
 
 
-let children = routeItem
 
 const routes = [{
     path: '*',
