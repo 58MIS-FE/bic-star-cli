@@ -73,6 +73,7 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "@bic-fe/mds-ui": "^0.1.12",
     "axios": "^0.16.2",
     "element-ui": "^2.7.2",
     "vue": "^2.4.1",
